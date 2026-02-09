@@ -1,53 +1,74 @@
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  background: #fff;
-  color: #222;
+:root {
+  --usf-green: #006747;
+  --usf-gold: #CFC493;
+  --text: #1f1f1f;
+  --border: #dddddd;
 }
 
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: #ffffff;
+}
+
+/* NAV */
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 3px solid var(--usf-green);
 }
 
-.nav-right a, .nav-right button {
-  margin-left: 1rem;
+.nav-right a {
+  margin-left: 1.2rem;
   text-decoration: none;
-  color: #222;
-  background: none;
-  border: none;
-  cursor: pointer;
+  color: var(--usf-green);
+  font-weight: 500;
 }
 
+/* HERO */
 .hero {
   text-align: center;
   padding: 4rem 1rem 2rem;
 }
 
+.hero h1 {
+  margin-bottom: 0.5rem;
+  color: var(--usf-green);
+}
+
+.hero p {
+  color: #555;
+}
+
+/* TABS */
 .tabs {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 .tab {
-  padding: .5rem 1.5rem;
-  border: 1px solid #222;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--usf-green);
   background: none;
   cursor: pointer;
+  color: var(--usf-green);
+  font-weight: 500;
 }
 
 .tab.active {
-  background: #222;
-  color: #fff;
+  background: var(--usf-green);
+  color: white;
 }
 
+/* TAB CONTENT */
 .tab-content {
-  max-width: 800px;
+  max-width: 850px;
   margin: auto;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   display: none;
 }
 
@@ -56,33 +77,48 @@ body {
 }
 
 .entry {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
+.entry span {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* PROJECTS */
 #projects, #skills {
-  max-width: 900px;
+  max-width: 950px;
   margin: auto;
-  padding: 3rem 2rem;
+  padding: 3.5rem 2rem;
 }
 
 .project {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .tags span {
   display: inline-block;
-  margin-right: .5rem;
-  background: #eee;
-  padding: .2rem .5rem;
-  font-size: .8rem;
+  margin-right: 0.5rem;
+  margin-top: 0.4rem;
+  background: var(--usf-gold);
+  padding: 0.25rem 0.6rem;
+  font-size: 0.8rem;
+  border-radius: 4px;
 }
 
+/* SKILLS */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.8rem;
 }
 
+.skills-grid h4 {
+  margin-bottom: 0.3rem;
+  color: var(--usf-green);
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 2rem;
