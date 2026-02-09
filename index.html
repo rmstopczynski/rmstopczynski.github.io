@@ -1,124 +1,129 @@
-<body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="#top" class="logo">RS</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#experience-education">Resume</a>
-        <a href="#projects">Projects</a>
-        <a href="#" id="contactBtn">Contact</a>
-        <button id="themeToggle" class="theme-toggle">☾</button>
-      </div>
-    </div>
-  </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ryan Stopczynski</title>
+  <link rel="stylesheet" href="style.css?v=6">
+</head>
 
+<body>
+  <!-- HERO -->
   <header class="hero" id="top">
     <div class="hero-content">
-      <div class="hero-flex">
-        <img src="profile.jpg" alt="Ryan Stopczynski" class="profile-img">
-        <div class="hero-text">
-          <h1>Hey, I'm Ryan Stopczynski</h1>
-          <p class="location">📍 Tampa, FL</p>
-          <p class="bio">Data Analyst specializing in AI & Business Analytics. Currently pursuing my M.S. at USF.</p>
-          <div class="hero-buttons">
-            <a href="Ryan_Stopczynski_Resume.pdf" class="btn primary" target="_blank">Resume</a>
-            <a href="https://github.com/rmstopczynski" class="btn outline" target="_blank">GitHub</a>
-          </div>
-        </div>
+      <h1>Ryan Stopczynski</h1>
+      <h2>Data Analyst</h2>
+      <p>AI & Business Analytics • Data Visualization • Applied Machine Learning</p>
+
+      <div class="hero-buttons">
+        <a href="Ryan_Stopczynski_Resume.pdf" class="btn primary" target="_blank">Resume</a>
+        <a href="https://github.com/rmstopczynski" class="btn outline" target="_blank">GitHub</a>
       </div>
     </div>
+
+    <button id="themeToggle" class="theme-toggle">☾</button>
   </header>
 
   <main>
-    <section class="section grid-2" id="experience-education">
-      <div class="col">
-        <h2>Experience</h2>
-        <div class="entry">
-          <div class="entry-header">
-             <div>
-               <h3>Data Analyst Intern</h3>
-               <p class="subtitle">Expert Inspectors Inc. • 2025</p>
-             </div>
-          </div>
-          <ul>
-            <li>Analyzed inspection data using SQL and Excel.</li>
-            <li>Built Tableau dashboards for turnaround tracking.</li>
-          </ul>
-        </div>
-        <div class="entry">
-          <h3>Graduate Teaching Assistant</h3>
-          <p class="subtitle">USF • 2024 – 2025</p>
-        </div>
+
+    <!-- EXPERIENCE / EDUCATION PANEL -->
+    <section class="panel">
+      <div class="panel-tabs">
+        <button class="tab active" data-tab="experience">Experience</button>
+        <button class="tab" data-tab="education">Education</button>
       </div>
 
-      <div class="col">
-        <h2>Education</h2>
-        <div class="entry">
-          <h3>M.S. AI & Business Analytics</h3>
-          <p class="subtitle">USF • Expected 2026</p>
-          <p class="gpa">GPA: 4.0</p>
+      <div class="panel-body">
+        <div id="experience" class="panel-content active">
+          <div class="entry">
+            <h3>Data Analyst Intern</h3>
+            <span>Expert Inspectors Inc. • May 2025 – Dec 2025</span>
+            <ul>
+              <li>Analyzed inspection data using SQL and Excel to identify underwriting trends.</li>
+              <li>Built Tableau dashboards tracking turnaround time and inspection volume.</li>
+              <li>Provided operational insights used by management.</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <h3>Graduate Teaching Assistant</h3>
+            <span>University of South Florida • Aug 2024 – May 2025</span>
+            <ul>
+              <li>Supported a statistics course with 400+ students.</li>
+              <li>Graded assignments and provided structured feedback.</li>
+              <li>Coordinated professionally with graduate TAs.</li>
+            </ul>
+          </div>
         </div>
-        <div class="entry">
-          <h3>B.S. Business Analytics</h3>
-          <p class="subtitle">USF • Graduated 2024</p>
+
+        <div id="education" class="panel-content">
+          <div class="entry">
+            <h3>M.S. Artificial Intelligence & Business Analytics</h3>
+            <span>University of South Florida • Expected May 2026</span>
+          </div>
+          <div class="entry">
+            <h3>B.S. Business Analytics & Information Systems</h3>
+            <span>University of South Florida • GPA 4.0</span>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Automated Web Application Quality Assurance System</h3>
+        <p>Automated cross-browser UI testing using Selenium and BrowserStack.</p>
+        <div class="tags">
+          <span>Selenium</span><span>BrowserStack</span><span>Automation</span>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>U.S. Nuclear Outage Tracking Web Application</h3>
+        <p>ASP.NET Core MVC application consuming real-time EIA API data.</p>
+        <div class="tags">
+          <span>C#</span><span>ASP.NET Core</span><span>Azure</span>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Fake News Detection Using Machine Learning</h3>
+        <p>NLP classifier using TF-IDF and SVM, Logistic Regression, and Naïve Bayes.</p>
+        <div class="tags">
+          <span>Python</span><span>NLP</span><span>Scikit-learn</span>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Healthcare Data Warehouse</h3>
+        <p>Designed OLAP schemas and ETL pipelines for healthcare analytics.</p>
+        <div class="tags">
+          <span>SQL</span><span>Data Modeling</span><span>ETL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
     <section class="section" id="skills">
       <h2>Technical Skills</h2>
-      <p class="instruction">Click a skill to filter projects</p>
-      <div class="skill-chips">
-        <button class="chip active" data-filter="all">All</button>
-        <button class="chip" data-filter="python">Python</button>
-        <button class="chip" data-filter="sql">SQL</button>
-        <button class="chip" data-filter="automation">Automation</button>
-        <button class="chip" data-filter="viz">Visualization</button>
+      <div class="skills-grid">
+        <div><strong>Languages</strong><br>Python, SQL, C#, R, JavaScript</div>
+        <div><strong>Data & ML</strong><br>Pandas, NumPy, Scikit-learn, TensorFlow, NLTK</div>
+        <div><strong>Visualization</strong><br>Tableau, Power BI, Matplotlib</div>
+        <div><strong>Tools & Cloud</strong><br>Git, Azure, AWS, Selenium</div>
       </div>
     </section>
 
-    <section class="project-grid" id="projects">
-      <div class="project-card" data-category="automation">
-        <div class="project-img" style="background-image: url('qa-project.jpg');"></div>
-        <div class="project-info">
-          <h3>Quality Assurance System</h3>
-          <p>Automated UI testing using Selenium and BrowserStack.</p>
-          <div class="tags"><span>Selenium</span><span>Automation</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="python">
-        <div class="project-img" style="background-image: url('news-project.jpg');"></div>
-        <div class="project-info">
-          <h3>Fake News Detection</h3>
-          <p>NLP classifier using Scikit-learn and TF-IDF.</p>
-          <div class="tags"><span>Python</span><span>NLP</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="sql viz">
-        <div class="project-img" style="background-image: url('data-project.jpg');"></div>
-        <div class="project-info">
-          <h3>Healthcare Data Warehouse</h3>
-          <p>OLAP schemas and ETL pipelines for analytics.</p>
-          <div class="tags"><span>SQL</span><span>ETL</span></div>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <div id="contactModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out via email:</p>
-      <a href="mailto:ryan@example.com" class="email-link">ryan@example.com</a>
-    </div>
-  </div>
-
   <footer>
-    <p>© 2026 Ryan Stopczynski</p>
+    © 2026 Ryan Stopczynski ·
+    <a href="#top" class="scroll-top">Back to top ↑</a>
   </footer>
 
   <script src="script.js"></script>
 </body>
+</html>
