@@ -1,11 +1,8 @@
-document.querySelectorAll(".toggle").forEach(btn => {
-  btn.addEventListener("click", () => {
-    document.querySelectorAll(".toggle, .toggle-content").forEach(el => el.classList.remove("active"));
-    btn.classList.add("active");
-    document.getElementById(btn.dataset.target).classList.add("active");
+document.querySelectorAll(".tab").forEach(tab => {
+  tab.addEventListener("click", () => {
+    document.querySelectorAll(".tab, .tab-content")
+      .forEach(e => e.classList.remove("active"));
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.tab).classList.add("active");
   });
-});
-
-document.getElementById("themeToggle").addEventListener("click", () => {
-  document.body.classList.toggle("dark");
 });
