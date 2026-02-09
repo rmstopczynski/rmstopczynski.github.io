@@ -1,5 +1,3 @@
-# rmstopczynski.github.io
-
 # Ryan Stopczynski
 
 **Data Analyst | Business Intelligence | QA & Technical Intern**
