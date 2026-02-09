@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const contents = document.querySelectorAll(".tab-content");
   const toggle = document.getElementById("themeToggle");
 
-  // Tabs
   tabs.forEach(tab => {
     tab.addEventListener("click", () => {
       tabs.forEach(t => t.classList.remove("active"));
@@ -13,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Dark mode
   if (localStorage.theme === "dark") {
     document.body.classList.add("dark");
   }
