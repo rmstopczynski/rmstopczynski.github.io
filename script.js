@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll(".tab");
-  const contents = document.querySelectorAll(".tab-content");
+  const contents = document.querySelectorAll(".panel-content");
   const toggle = document.getElementById("themeToggle");
 
   tabs.forEach(tab => {
@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   toggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
-    localStorage.theme = document.body.classList.contains("dark") ? "dark" : "light";
+    localStorage.theme =
+      document.body.classList.contains("dark") ? "dark" : "light";
   });
 });
