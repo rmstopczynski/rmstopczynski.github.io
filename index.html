@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ryan Stopczynski</title>
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 
 <body>
-  <!-- HERO HEADER -->
+  <!-- HERO -->
   <header class="hero">
     <div class="hero-content">
       <h1>Ryan Stopczynski</h1>
@@ -20,43 +20,46 @@
 
   <main>
 
-    <!-- EXPERIENCE / EDUCATION CONTAINER -->
+    <!-- EXPERIENCE / EDUCATION PANEL -->
     <section class="panel">
       <div class="panel-tabs">
         <button class="tab active" data-tab="experience">Experience</button>
         <button class="tab" data-tab="education">Education</button>
       </div>
 
-      <div id="experience" class="panel-content active">
-        <div class="entry">
-          <h3>Data Analyst Intern</h3>
-          <span>Expert Inspectors Inc. • May 2025 – Dec 2026</span>
-          <ul>
-            <li>Analyzed residential inspection data using SQL and Excel to identify underwriting trends.</li>
-            <li>Built Tableau dashboards tracking turnaround time, volume, and rework rates.</li>
-            <li>Improved operational reporting used by management.</li>
-          </ul>
+      <div class="panel-body">
+        <div id="experience" class="panel-content active">
+          <div class="entry">
+            <h3>Data Analyst Intern</h3>
+            <span>Expert Inspectors Inc. • May 2025 – Dec 2025</span>
+            <ul>
+              <li>Analyzed residential inspection data using SQL and Excel to identify underwriting trends.</li>
+              <li>Built Tableau dashboards tracking turnaround time, inspection volume, and rework rates.</li>
+              <li>Delivered operational insights used by management for decision-making.</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <h3>Graduate Teaching Assistant</h3>
+            <span>University of South Florida • Aug 2024 – May 2025</span>
+            <ul>
+              <li>Supported a statistics course with 400+ students.</li>
+              <li>Graded assignments and provided structured feedback.</li>
+              <li>Coordinated professionally with graduate TAs for scheduling and logistics.</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="entry">
-          <h3>Graduate Teaching Assistant</h3>
-          <span>University of South Florida • Aug 2024 – May 2025</span>
-          <ul>
-            <li>Supported a 400+ student statistics course.</li>
-            <li>Graded projects and provided structured feedback.</li>
-            <li>Coordinated scheduling with graduate TAs.</li>
-          </ul>
-        </div>
-      </div>
+        <div id="education" class="panel-content">
+          <div class="entry">
+            <h3>M.S. Artificial Intelligence & Business Analytics</h3>
+            <span>University of South Florida • Expected May 2026</span>
+          </div>
 
-      <div id="education" class="panel-content">
-        <div class="entry">
-          <h3>M.S. Artificial Intelligence & Business Analytics</h3>
-          <span>University of South Florida • Expected May 2026</span>
-        </div>
-        <div class="entry">
-          <h3>B.S. Business Analytics & Information Systems</h3>
-          <span>University of South Florida • GPA 4.0</span>
+          <div class="entry">
+            <h3>B.S. Business Analytics & Information Systems</h3>
+            <span>University of South Florida • GPA 4.0</span>
+          </div>
         </div>
       </div>
     </section>
@@ -75,7 +78,7 @@
 
       <div class="project">
         <h3>U.S. Nuclear Outage Tracking Web Application</h3>
-        <p>Full-stack ASP.NET Core MVC application using real-time EIA API data.</p>
+        <p>Full-stack ASP.NET Core MVC application consuming real-time EIA data.</p>
         <div class="tags">
           <span>C#</span><span>ASP.NET Core</span><span>Azure</span>
         </div>
@@ -83,7 +86,7 @@
 
       <div class="project">
         <h3>Fake News Detection Using Machine Learning</h3>
-        <p>NLP classification system using TF-IDF and supervised learning models.</p>
+        <p>Built an NLP classifier using TF-IDF and evaluated SVM, Logistic Regression, and Naïve Bayes models.</p>
         <div class="tags">
           <span>Python</span><span>NLP</span><span>Scikit-learn</span>
         </div>
@@ -91,7 +94,7 @@
 
       <div class="project">
         <h3>Healthcare Data Warehouse</h3>
-        <p>Designed OLAP schemas and dashboards for healthcare billing analysis.</p>
+        <p>Designed OLAP schemas and transformed synthetic healthcare data for analytical reporting.</p>
         <div class="tags">
           <span>SQL</span><span>Data Modeling</span><span>ETL</span>
         </div>
@@ -100,7 +103,7 @@
 
     <!-- SKILLS -->
     <section class="section">
-      <h2>Skills</h2>
+      <h2>Technical Skills</h2>
       <div class="skills-grid">
         <div><strong>Languages</strong><br>Python, SQL, C#, R, JavaScript</div>
         <div><strong>Data & ML</strong><br>Pandas, NumPy, Scikit-learn, TensorFlow, NLTK</div>
@@ -112,7 +115,9 @@
   </main>
 
   <footer>
-    © 2026 Ryan Stopczynski
+    © 2026 Ryan Stopczynski ·
+    <a href="https://linkedin.com/in/ryanstopczynski">LinkedIn</a> ·
+    <a href="https://github.com/rmstopczynski">GitHub</a>
   </footer>
 
   <script src="script.js"></script>

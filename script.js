@@ -7,11 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
     tab.addEventListener("click", () => {
       tabs.forEach(t => t.classList.remove("active"));
       contents.forEach(c => c.classList.remove("active"));
+
       tab.classList.add("active");
       document.getElementById(tab.dataset.tab).classList.add("active");
     });
   });
 
+  // Load saved theme
   if (localStorage.theme === "dark") {
     document.body.classList.add("dark");
   }
