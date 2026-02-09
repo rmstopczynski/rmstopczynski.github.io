@@ -1,15 +1,25 @@
 :root {
   --usf-green: #006747;
   --usf-gold: #CFC493;
+  --bg: #ffffff;
   --text: #1f1f1f;
+  --muted: #666;
   --border: #dddddd;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --muted: #aaaaaa;
+  --border: #2a2a2a;
 }
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--bg);
   color: var(--text);
-  background: #ffffff;
+  transition: background 0.3s, color 0.3s;
 }
 
 /* NAV */
@@ -20,11 +30,14 @@ body {
   border-bottom: 3px solid var(--usf-green);
 }
 
-.nav-right a {
+.nav-right a, .nav-right button {
   margin-left: 1.2rem;
-  text-decoration: none;
   color: var(--usf-green);
+  text-decoration: none;
   font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 /* HERO */
@@ -34,12 +47,8 @@ body {
 }
 
 .hero h1 {
-  margin-bottom: 0.5rem;
   color: var(--usf-green);
-}
-
-.hero p {
-  color: #555;
+  margin-bottom: 0.5rem;
 }
 
 /* TABS */
@@ -47,16 +56,19 @@ body {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 2rem;
 }
 
 .tab {
   padding: 0.5rem 1.5rem;
   border: 1px solid var(--usf-green);
   background: none;
-  cursor: pointer;
   color: var(--usf-green);
-  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab:hover {
+  transform: translateY(-2px);
 }
 
 .tab.active {
@@ -64,7 +76,7 @@ body {
   color: white;
 }
 
-/* TAB CONTENT */
+/* CONTENT */
 .tab-content {
   max-width: 850px;
   margin: auto;
@@ -81,8 +93,7 @@ body {
 }
 
 .entry span {
-  color: #666;
-  font-size: 0.95rem;
+  color: var(--muted);
 }
 
 /* PROJECTS */
@@ -94,14 +105,18 @@ body {
 
 .project {
   margin-bottom: 2.5rem;
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
 }
 
 .tags span {
   display: inline-block;
-  margin-right: 0.5rem;
-  margin-top: 0.4rem;
   background: var(--usf-gold);
   padding: 0.25rem 0.6rem;
+  margin-right: 0.5rem;
   font-size: 0.8rem;
   border-radius: 4px;
 }
@@ -109,18 +124,18 @@ body {
 /* SKILLS */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 1.8rem;
 }
 
 .skills-grid h4 {
-  margin-bottom: 0.3rem;
   color: var(--usf-green);
+  margin-bottom: 0.3rem;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 2rem;
-  color: #777;
+  color: var(--muted);
 }
