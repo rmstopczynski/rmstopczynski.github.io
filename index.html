@@ -4,162 +4,126 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ryan Stopczynski</title>
-  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 
 <body>
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero-content">
+      <h1>Ryan Stopczynski</h1>
+      <h2>Data Analyst</h2>
+      <p>AI & Business Analytics • Data Visualization • Applied Machine Learning</p>
 
-<header class="hero" id="top">
-  <div class="hero-content">
-    <h1>Ryan Stopczynski</h1>
-    <h2>Data Analyst</h2>
-    <p>AI & Business Analytics • Data Visualization • Applied Machine Learning</p>
-
-    <div class="hero-buttons">
-      <a href="Ryan_Stopczynski_Resume.pdf" class="btn primary" target="_blank">Resume</a>
-      <a href="https://github.com/rmstopczynski" class="btn outline" target="_blank">GitHub</a>
-    </div>
-  </div>
-
-  <button id="themeToggle" class="theme-toggle">☾</button>
-</header>
-
-<main>
-
-<!-- EXPERIENCE / EDUCATION -->
-<section class="panel">
-  <div class="panel-tabs">
-    <button class="tab active" data-tab="experience">Experience</button>
-    <button class="tab" data-tab="education">Education</button>
-  </div>
-
-  <div class="panel-body">
-    <div id="experience" class="panel-content active">
-      <div class="entry">
-        <h3>Data Analyst Intern</h3>
-        <span>Expert Inspectors Inc. • May 2025 – Dec 2025</span>
-        <ul>
-          <li>Analyzed inspection data using SQL and Excel to identify underwriting trends.</li>
-          <li>Built Tableau dashboards for operational reporting.</li>
-          <li>Delivered insights used by management decision-making.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <h3>Graduate Teaching Assistant</h3>
-        <span>University of South Florida • Aug 2024 – May 2025</span>
-        <ul>
-          <li>Supported statistics coursework for 400+ students.</li>
-          <li>Graded projects and provided structured feedback.</li>
-        </ul>
+      <div class="hero-buttons">
+        <a href="Ryan_Stopczynski_Resume.pdf" class="btn primary" target="_blank">Resume</a>
+        <a href="https://github.com/rmstopczynski" class="btn outline" target="_blank">GitHub</a>
       </div>
     </div>
 
-    <div id="education" class="panel-content">
-      <div class="entry">
-        <h3>M.S. Artificial Intelligence & Business Analytics</h3>
-        <span>University of South Florida • Expected May 2026</span>
+    <button id="themeToggle" class="theme-toggle">☾</button>
+  </header>
+
+  <main>
+
+    <!-- EXPERIENCE / EDUCATION PANEL -->
+    <section class="panel">
+      <div class="panel-tabs">
+        <button class="tab active" data-tab="experience">Experience</button>
+        <button class="tab" data-tab="education">Education</button>
       </div>
-      <div class="entry">
-        <h3>B.S. Business Analytics & Information Systems</h3>
-        <span>University of South Florida • GPA 4.0</span>
+
+      <div class="panel-body">
+        <div id="experience" class="panel-content active">
+          <div class="entry">
+            <h3>Data Analyst Intern</h3>
+            <span>Expert Inspectors Inc. • May 2025 – Dec 2025</span>
+            <ul>
+              <li>Analyzed inspection data using SQL and Excel to identify underwriting trends.</li>
+              <li>Built Tableau dashboards tracking turnaround time and inspection volume.</li>
+              <li>Provided operational insights used by management.</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <h3>Graduate Teaching Assistant</h3>
+            <span>University of South Florida • Aug 2024 – May 2025</span>
+            <ul>
+              <li>Supported a statistics course with 400+ students.</li>
+              <li>Graded assignments and provided structured feedback.</li>
+              <li>Coordinated professionally with graduate TAs.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="education" class="panel-content">
+          <div class="entry">
+            <h3>M.S. Artificial Intelligence & Business Analytics</h3>
+            <span>University of South Florida • Expected May 2026</span>
+          </div>
+          <div class="entry">
+            <h3>B.S. Business Analytics & Information Systems</h3>
+            <span>University of South Florida • GPA 4.0</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- PROJECT FILTERS -->
-<section class="section">
-  <h2>Project Filters</h2>
-  <p class="subtitle">Filter projects by skill (multi-select)</p>
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <h2>Projects</h2>
 
-  <div class="skill-filters">
-    <button class="skill-chip" data-skill="python">
-      <svg viewBox="0 0 24 24"><circle cx="12" cy="6" r="3"/><circle cx="12" cy="18" r="3"/><path d="M12 9v6"/></svg>
-      Python
-    </button>
+      <div class="project">
+        <h3>Automated Web Application Quality Assurance System</h3>
+        <p>Automated cross-browser UI testing using Selenium and BrowserStack.</p>
+        <div class="tags">
+          <span>Selenium</span><span>BrowserStack</span><span>Automation</span>
+        </div>
+      </div>
 
-    <button class="skill-chip" data-skill="ml">
-      <svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="M8 12h8M14 8l2-2M14 16l2 2"/></svg>
-      Machine Learning
-    </button>
+      <div class="project">
+        <h3>U.S. Nuclear Outage Tracking Web Application</h3>
+        <p>ASP.NET Core MVC application consuming real-time EIA API data.</p>
+        <div class="tags">
+          <span>C#</span><span>ASP.NET Core</span><span>Azure</span>
+        </div>
+      </div>
 
-    <button class="skill-chip" data-skill="nlp">
-      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h12M4 18h8"/></svg>
-      NLP
-    </button>
+      <div class="project">
+        <h3>Fake News Detection Using Machine Learning</h3>
+        <p>NLP classifier using TF-IDF and SVM, Logistic Regression, and Naïve Bayes.</p>
+        <div class="tags">
+          <span>Python</span><span>NLP</span><span>Scikit-learn</span>
+        </div>
+      </div>
 
-    <button class="skill-chip" data-skill="sql">
-      <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/></svg>
-      SQL
-    </button>
+      <div class="project">
+        <h3>Healthcare Data Warehouse</h3>
+        <p>Designed OLAP schemas and ETL pipelines for healthcare analytics.</p>
+        <div class="tags">
+          <span>SQL</span><span>Data Modeling</span><span>ETL</span>
+        </div>
+      </div>
+    </section>
 
-    <button class="skill-chip" data-skill="csharp">
-      <svg viewBox="0 0 24 24"><path d="M8 12h8M10 8h4M10 16h4"/></svg>
-      C#
-    </button>
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div><strong>Languages</strong><br>Python, SQL, C#, R, JavaScript</div>
+        <div><strong>Data & ML</strong><br>Pandas, NumPy, Scikit-learn, TensorFlow, NLTK</div>
+        <div><strong>Visualization</strong><br>Tableau, Power BI, Matplotlib</div>
+        <div><strong>Tools & Cloud</strong><br>Git, Azure, AWS, Selenium</div>
+      </div>
+    </section>
 
-    <button class="skill-chip" data-skill="cloud">
-      <svg viewBox="0 0 24 24"><path d="M6 15h11a3 3 0 0 0 0-6 5 5 0 0 0-10-1A3 3 0 0 0 6 15z"/></svg>
-      Cloud
-    </button>
-  </div>
-</section>
+  </main>
 
-<!-- PROJECTS -->
-<section class="section">
-  <h2>Projects</h2>
+  <footer>
+    © 2026 Ryan Stopczynski ·
+    <a href="#top" class="scroll-top">Back to top ↑</a>
+  </footer>
 
-  <div class="projects-grid">
-
-    <div class="project-card" data-skills="python ml nlp">
-      <h3>Fake News Detection Using Machine Learning</h3>
-      <p>NLP classifier using TF-IDF and supervised learning models.</p>
-      <div class="tags"><span>Python</span><span>NLP</span><span>Scikit-learn</span></div>
-      <a class="github-btn" href="https://github.com/rmstopczynski" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project-card" data-skills="sql">
-      <h3>Healthcare Data Warehouse</h3>
-      <p>OLAP schema and ETL pipelines for healthcare analytics.</p>
-      <div class="tags"><span>SQL</span><span>ETL</span></div>
-      <a class="github-btn" href="https://github.com/rmstopczynski" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project-card" data-skills="csharp cloud">
-      <h3>U.S. Nuclear Outage Tracking Web App</h3>
-      <p>ASP.NET Core MVC app using real-time EIA data.</p>
-      <div class="tags"><span>C#</span><span>Azure</span></div>
-      <a class="github-btn" href="https://github.com/rmstopczynski" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project-card" data-skills="python">
-      <h3>Automated Web Application QA System</h3>
-      <p>Cross-browser UI testing using Selenium.</p>
-      <div class="tags"><span>Python</span><span>Selenium</span></div>
-      <a class="github-btn" href="https://github.com/rmstopczynski" target="_blank">View on GitHub</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- SKILLS (UNCHANGED, ALL SKILLS STAY) -->
-<section class="section">
-  <h2>Technical Skills</h2>
-  <div class="skills-grid">
-    <div><strong>Languages</strong><br>Python, SQL, C#, R, JavaScript</div>
-    <div><strong>ML / AI</strong><br>Scikit-learn, TensorFlow, NLTK</div>
-    <div><strong>Visualization</strong><br>Tableau, Power BI, Matplotlib</div>
-    <div><strong>Tools</strong><br>Git, Azure, AWS, Selenium</div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  © 2026 Ryan Stopczynski · <a href="#top">Back to top ↑</a>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -18,7 +18,10 @@ body.dark {
   --border: #2a2a2a;
 }
 
-* { box-sizing: border-box; scroll-behavior: smooth; }
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -33,40 +36,64 @@ body {
   color: white;
   padding: 4rem 2rem;
   position: relative;
+}
+
+.hero-content {
   text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
 }
 
 .hero-buttons {
   margin-top: 1.5rem;
   display: flex;
-  gap: 1rem;
   justify-content: center;
+  gap: 1rem;
 }
 
 .btn {
   padding: 0.6rem 1.5rem;
   border-radius: 6px;
   text-decoration: none;
-  transition: transform 0.2s ease;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.btn.primary { background: white; color: var(--usf-green); }
-.btn.outline { border: 1px solid white; color: white; }
-.btn:hover { transform: translateY(-3px); }
+.btn.primary {
+  background: white;
+  color: var(--usf-green);
+}
+
+.btn.outline {
+  border: 1px solid white;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
 
 .theme-toggle {
   position: absolute;
-  top: 2rem;
   right: 2rem;
+  top: 2rem;
   background: none;
   border: none;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 
 /* MAIN */
-main { max-width: 1000px; margin: auto; padding: 3rem 1.5rem; }
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 3rem 1.5rem;
+}
 
 /* PANEL */
 .panel {
@@ -75,23 +102,46 @@ main { max-width: 1000px; margin: auto; padding: 3rem 1.5rem; }
   border-radius: 10px;
   padding: 1.5rem;
   margin-bottom: 3rem;
+  transition: transform 0.2s ease;
 }
 
-.panel-tabs { display: flex; gap: 1rem; margin-bottom: 1.5rem; }
+.panel:hover {
+  transform: translateY(-2px);
+}
+
+.panel-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
 
 .tab {
   padding: 0.5rem 1.5rem;
   border: 1px solid var(--usf-green);
   background: none;
   color: var(--usf-green);
-  border-radius: 5px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
-.tab.active { background: var(--usf-green); color: white; }
+.tab.active {
+  background: var(--usf-green);
+  color: white;
+}
 
-.panel-content { display: none; }
-.panel-content.active { display: block; }
+.panel-content {
+  display: none;
+}
+
+.panel-content.active {
+  display: block;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 /* SECTIONS */
 .section {
@@ -99,64 +149,22 @@ main { max-width: 1000px; margin: auto; padding: 3rem 1.5rem; }
   border-radius: 10px;
   padding: 2rem;
   margin-bottom: 3rem;
+  transition: transform 0.2s ease;
 }
 
-.subtitle { text-align: center; color: var(--muted); }
-
-/* FILTERS */
-.skill-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-.skill-chip {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.45rem 0.9rem;
-  border-radius: 6px;
-  border: 1px solid var(--usf-green);
-  background: transparent;
-  color: var(--usf-green);
-  cursor: pointer;
-}
-
-.skill-chip svg {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-}
-
-.skill-chip.active {
-  background: var(--usf-green);
-  color: white;
+.section:hover {
+  transform: translateY(-2px);
 }
 
 /* PROJECTS */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+.project {
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease;
 }
 
-.project-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 1.5rem;
-  transition: transform 0.25s ease, opacity 0.25s ease;
+.project:hover {
+  transform: translateX(4px);
 }
-
-.project-card.hidden {
-  opacity: 0;
-  transform: scale(0.95);
-  pointer-events: none;
-}
-
-.project-card:hover { transform: translateY(-6px); }
 
 .tags span {
   background: var(--usf-gold);
@@ -164,14 +172,6 @@ main { max-width: 1000px; margin: auto; padding: 3rem 1.5rem; }
   border-radius: 4px;
   font-size: 0.8rem;
   margin-right: 0.4rem;
-}
-
-.github-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  color: var(--usf-green);
-  font-weight: 500;
-  text-decoration: none;
 }
 
 /* SKILLS */
@@ -186,4 +186,9 @@ footer {
   text-align: center;
   padding: 2rem;
   color: var(--muted);
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
 }
