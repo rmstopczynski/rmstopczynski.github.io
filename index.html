@@ -4,17 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ryan Stopczynski</title>
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 
 <body>
   <!-- HERO -->
-  <header class="hero">
+  <header class="hero" id="top">
     <div class="hero-content">
       <h1>Ryan Stopczynski</h1>
       <h2>Data Analyst</h2>
       <p>AI & Business Analytics • Data Visualization • Applied Machine Learning</p>
+
+      <div class="hero-buttons">
+        <a href="Ryan_Stopczynski_Resume.pdf" class="btn primary" target="_blank">Resume</a>
+        <a href="https://github.com/rmstopczynski" class="btn outline" target="_blank">GitHub</a>
+      </div>
     </div>
+
     <button id="themeToggle" class="theme-toggle">☾</button>
   </header>
 
@@ -33,9 +39,9 @@
             <h3>Data Analyst Intern</h3>
             <span>Expert Inspectors Inc. • May 2025 – Dec 2025</span>
             <ul>
-              <li>Analyzed residential inspection data using SQL and Excel to identify underwriting trends.</li>
-              <li>Built Tableau dashboards tracking turnaround time, inspection volume, and rework rates.</li>
-              <li>Delivered operational insights used by management for decision-making.</li>
+              <li>Analyzed inspection data using SQL and Excel to identify underwriting trends.</li>
+              <li>Built Tableau dashboards tracking turnaround time and inspection volume.</li>
+              <li>Provided operational insights used by management.</li>
             </ul>
           </div>
 
@@ -45,7 +51,7 @@
             <ul>
               <li>Supported a statistics course with 400+ students.</li>
               <li>Graded assignments and provided structured feedback.</li>
-              <li>Coordinated professionally with graduate TAs for scheduling and logistics.</li>
+              <li>Coordinated professionally with graduate TAs.</li>
             </ul>
           </div>
         </div>
@@ -55,7 +61,6 @@
             <h3>M.S. Artificial Intelligence & Business Analytics</h3>
             <span>University of South Florida • Expected May 2026</span>
           </div>
-
           <div class="entry">
             <h3>B.S. Business Analytics & Information Systems</h3>
             <span>University of South Florida • GPA 4.0</span>
@@ -65,7 +70,7 @@
     </section>
 
     <!-- PROJECTS -->
-    <section class="section">
+    <section class="section" id="projects">
       <h2>Projects</h2>
 
       <div class="project">
@@ -78,7 +83,7 @@
 
       <div class="project">
         <h3>U.S. Nuclear Outage Tracking Web Application</h3>
-        <p>Full-stack ASP.NET Core MVC application consuming real-time EIA data.</p>
+        <p>ASP.NET Core MVC application consuming real-time EIA API data.</p>
         <div class="tags">
           <span>C#</span><span>ASP.NET Core</span><span>Azure</span>
         </div>
@@ -86,7 +91,7 @@
 
       <div class="project">
         <h3>Fake News Detection Using Machine Learning</h3>
-        <p>Built an NLP classifier using TF-IDF and evaluated SVM, Logistic Regression, and Naïve Bayes models.</p>
+        <p>NLP classifier using TF-IDF and SVM, Logistic Regression, and Naïve Bayes.</p>
         <div class="tags">
           <span>Python</span><span>NLP</span><span>Scikit-learn</span>
         </div>
@@ -94,7 +99,7 @@
 
       <div class="project">
         <h3>Healthcare Data Warehouse</h3>
-        <p>Designed OLAP schemas and transformed synthetic healthcare data for analytical reporting.</p>
+        <p>Designed OLAP schemas and ETL pipelines for healthcare analytics.</p>
         <div class="tags">
           <span>SQL</span><span>Data Modeling</span><span>ETL</span>
         </div>
@@ -102,7 +107,7 @@
     </section>
 
     <!-- SKILLS -->
-    <section class="section">
+    <section class="section" id="skills">
       <h2>Technical Skills</h2>
       <div class="skills-grid">
         <div><strong>Languages</strong><br>Python, SQL, C#, R, JavaScript</div>
@@ -116,8 +121,7 @@
 
   <footer>
     © 2026 Ryan Stopczynski ·
-    <a href="https://linkedin.com/in/ryanstopczynski">LinkedIn</a> ·
-    <a href="https://github.com/rmstopczynski">GitHub</a>
+    <a href="#top" class="scroll-top">Back to top ↑</a>
   </footer>
 
   <script src="script.js"></script>
