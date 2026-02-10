@@ -21,4 +21,16 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.theme =
       document.body.classList.contains("dark") ? "dark" : "light";
   });
+  const toggle2 = document.getElementById("themeToggle2");
+
+if (localStorage.theme === "dark") {
+  document.body.classList.add("dark");
+}
+
+toggle2.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  localStorage.theme =
+    document.body.classList.contains("dark") ? "dark" : "light";
+  toggle2.textContent = document.body.classList.contains("dark") ? "☾" : "☀";
+});
 });
