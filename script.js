@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   const tabs = document.querySelectorAll(".tab");
   const contents = document.querySelectorAll(".panel-content");
   const toggle = document.getElementById("themeToggle");
@@ -14,12 +15,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* DARK MODE */
-  if (localStorage.getItem("theme") === "dark") {
+  /* LOAD SAVED THEME */
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
     document.body.classList.add("dark");
     toggle.textContent = "☀";
   }
 
+  /* TOGGLE DARK MODE */
   toggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 
@@ -31,4 +35,5 @@ document.addEventListener("DOMContentLoaded", () => {
       toggle.textContent = "☾";
     }
   });
+
 });
