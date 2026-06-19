@@ -56,12 +56,11 @@ li { margin-bottom: 0.35rem; color: var(--text-muted); }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: var(--nav-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: var(--surface);
   border-bottom: 1px solid var(--border);
   transform: translateY(-100%);
   transition: transform 0.3s ease, background 0.3s;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
 }
 
 .topnav.visible { transform: translateY(0); }
@@ -70,31 +69,32 @@ li { margin-bottom: 0.35rem; color: var(--text-muted); }
   max-width: 900px;
   margin: 0 auto;
   padding: 0 1.25rem;
-  height: 56px;
+  height: 52px;
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
 .topnav-name {
-  font-weight: 600;
-  font-size: 0.9rem;
+  font-weight: 700;
+  font-size: 0.88rem;
   color: var(--green);
   white-space: nowrap;
+  letter-spacing: -0.01em;
 }
 body.dark .topnav-name { color: var(--gold); }
 
 .topnav-links {
   display: flex;
-  gap: 0.25rem;
+  gap: 0.1rem;
   flex: 1;
 }
 
 .topnav-links a {
-  font-size: 0.825rem;
+  font-size: 0.82rem;
   font-weight: 500;
   color: var(--text-muted);
-  padding: 0.3rem 0.65rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 5px;
   text-decoration: none;
   transition: color 0.15s, background 0.15s;
@@ -189,14 +189,14 @@ body.dark .topnav-name { color: var(--gold); }
   opacity: 0.95;
 }
 
-/* theme toggle lives in nav now */
+/* theme toggle lives in nav */
 .theme-toggle {
   background: var(--surface-2);
-  border: 1px solid var(--border);
+  border: 1.5px solid var(--border);
   color: var(--text);
   font-size: 0.95rem;
-  width: 2.1rem;
-  height: 2.1rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -204,6 +204,8 @@ body.dark .topnav-name { color: var(--gold); }
   justify-content: center;
   transition: background 0.2s;
   flex-shrink: 0;
+  margin-left: auto;
+  line-height: 1;
 }
 .theme-toggle:hover { background: var(--border); }
 
@@ -402,8 +404,8 @@ body.dark .project-gh:hover { color: var(--gold); }
 .project-chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
-  margin-top: 0.25rem;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
 }
 
 .project-chips span {
@@ -412,8 +414,9 @@ body.dark .project-gh:hover { color: var(--gold); }
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 4px;
-  padding: 0.15rem 0.5rem;
+  padding: 0.18rem 0.55rem;
   color: var(--text-muted);
+  white-space: nowrap;
 }
 
 /* ── SKILLS ── */
@@ -497,14 +500,16 @@ body.dark .cert-icon { color: var(--gold); }
 .contact-card {
   display: flex;
   align-items: center;
-  gap: 0.85rem;
+  gap: 0.75rem;
   background: var(--surface-2);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 1rem 1.2rem;
+  padding: 0.9rem 1.1rem;
   text-decoration: none;
   transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
   color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 .contact-card:hover {
