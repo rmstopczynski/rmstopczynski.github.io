@@ -3,28 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ryan Stopczynski</title>
-  <link rel="stylesheet" href="style.css?v=6">
+  <title>Ryan Stopczynski – Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
   <!-- HERO -->
   <header class="hero" id="top">
-    <div class="hero-content">
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">☾</button>
+    <div class="hero-inner">
+      <div class="hero-eyebrow">Available · Tampa, FL</div>
       <h1>Ryan Stopczynski</h1>
-      <h2>Data Analyst</h2>
-      <p>AI & Business Analytics • Data Visualization • Applied Machine Learning</p>
-
+      <p class="hero-sub">Data Governance & Analytics · Applied ML · Business Intelligence</p>
       <div class="hero-buttons">
-        <a href="Ryan_Stopczynski_Resume.pdf" class="btn primary" target="_blank">Resume</a>
+        <a href="Ryan_Stopczynski_Resume.pdf" class="btn primary" target="_blank">Download Resume</a>
         <a href="https://github.com/rmstopczynski" class="btn outline" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" class="btn outline" target="_blank">LinkedIn</a>
       </div>
     </div>
-
-    <button id="themeToggle" class="theme-toggle">☾</button>
+    <div class="hero-accent"></div>
   </header>
 
-<main>
+  <main>
 
     <!-- EXPERIENCE / EDUCATION PANEL -->
     <section class="panel">
@@ -37,132 +41,213 @@
 
         <!-- EXPERIENCE -->
         <div id="experience" class="panel-content active">
+          <div class="timeline">
 
-          <div class="entry">
-            <h3>Data Analyst Intern – Expert Inspectors Inc.</h3>
-            <span>May 2025 – December 2025</span>
-            <ul>
-              <li>Analyzed residential inspection data using SQL and Excel.</li>
-              <li>Identified underwriting trends in roof age and construction type.</li>
-              <li>Built Tableau dashboards tracking volume, turnaround, and rework rates.</li>
-            </ul>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <div class="tl-meta">
+                  <span class="tl-badge current">Current</span>
+                  <span class="tl-date">May 2026 – Present</span>
+                </div>
+                <h3>Data Governance BSA Intern</h3>
+                <div class="tl-company">Jabil · St. Petersburg, FL</div>
+                <ul>
+                  <li>Serving as Informatica champion on a cross-functional team building an in-house AI chatbot; integrated Informatica IDMC via REST API, enabling natural language querying of governed metadata assets.</li>
+                  <li>Designed API-based data flows connecting Informatica's metadata catalog to the chatbot backend, supporting governed data discovery across the enterprise.</li>
+                  <li>Evaluated Informatica CLAIRE AI across metadata enrichment, classification, and data quality use cases; delivered findings to the Data Governance Enablement team.</li>
+                  <li>Supported LeanIX ↔ Informatica IDMC integration; produced sandbox connectivity documentation.</li>
+                  <li>Designed an API-based integration between Informatica and SAP Redwood Scheduler to automate management of SAP HANA-ingested assets, reducing manual overhead.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <div class="tl-meta">
+                  <span class="tl-date">Aug 2024 – May 2025</span>
+                </div>
+                <h3>Graduate Teaching Assistant</h3>
+                <div class="tl-company">University of South Florida</div>
+                <ul>
+                  <li>Supported a 400+ student Business & Economic Statistics course through office hours and project grading.</li>
+                  <li>Coordinated TA scheduling and workload planning across the graduate team.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <div class="tl-meta">
+                  <span class="tl-date">May 2023 – Aug 2023</span>
+                </div>
+                <h3>Data Analyst – Intel Sponsored Project</h3>
+                <div class="tl-company">Global Tech Experience</div>
+                <ul>
+                  <li>Performed exploratory data analysis and A/B testing to evaluate energy availability for data center site selection.</li>
+                  <li>Built Tableau dashboards for executive stakeholder presentations.</li>
+                </ul>
+              </div>
+            </div>
+
           </div>
-
-          <div class="entry">
-            <h3>Graduate Teaching Assistant – University of South Florida</h3>
-            <span>August 2024 – May 2025</span>
-            <ul>
-              <li>Supported 400+ student Business & Economic Statistics I course.</li>
-              <li>Held office hours and graded projects.</li>
-              <li>Coordinated TA scheduling and workload planning.</li>
-            </ul>
-          </div>
-
-          <div class="entry">
-            <h3>Data Analyst – Intel Sponsored Project (Global Tech Experience)</h3>
-            <span>May 2023 – August 2023</span>
-            <ul>
-              <li>Performed exploratory data analysis and A/B testing in Excel.</li>
-              <li>Analyzed energy availability for data center site selection.</li>
-              <li>Built Tableau dashboards for stakeholders.</li>
-            </ul>
-          </div>
-
         </div>
 
         <!-- EDUCATION -->
         <div id="education" class="panel-content">
+          <div class="timeline">
 
-          <div class="entry">
-            <h3>M.S. Artificial Intelligence & Business Analytics</h3>
-            <span>University of South Florida • Expected May 2026</span>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <div class="tl-meta">
+                  <span class="tl-badge current">In Progress</span>
+                  <span class="tl-date">Expected May 2026</span>
+                </div>
+                <h3>M.S. Artificial Intelligence & Business Analytics</h3>
+                <div class="tl-company">University of South Florida · GPA 3.94 / 4.0</div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <div class="tl-meta">
+                  <span class="tl-date">May 2024</span>
+                </div>
+                <h3>B.S. Business Analytics & Information Systems</h3>
+                <div class="tl-company">University of South Florida · GPA 4.0 / 4.0</div>
+              </div>
+            </div>
+
           </div>
-
-          <div class="entry">
-            <h3>B.S. Business Analytics & Information Systems (GPA: 4.0)</h3>
-            <span>University of South Florida • May 2024</span>
-          </div>
-
         </div>
 
       </div>
     </section>
 
 
-  <!-- PROJECTS -->
-  <section class="section">
-    <h2>Projects</h2>
+    <!-- PROJECTS -->
+    <section class="section">
+      <h2 class="section-title">Projects</h2>
 
-    <div class="project">
-      <h3>Automated Web Application QA System</h3>
-      <ul>
-        <li>Developed Selenium + BrowserStack automated UI tests across browsers.</li>
-        <li>Built structured regression workflows reducing manual QA effort.</li>
-        <li>Improved defect detection and cross-browser reliability.</li>
-      </ul>
-    </div>
+      <div class="projects-grid">
 
-    <div class="project">
-      <h3>U.S. Nuclear Outage Tracking Web Application</h3>
-      <ul>
-        <li>Built full-stack ASP.NET Core MVC application deployed on Azure.</li>
-        <li>Integrated real-time RESTful EIA API data.</li>
-        <li>Implemented CRUD operations and interactive jQuery visualizations.</li>
-      </ul>
-    </div>
+        <div class="project-card">
+          <div class="project-tag">Full Stack · Cloud</div>
+          <h3>U.S. Nuclear Outage Tracker</h3>
+          <p>Full-stack ASP.NET Core MVC app deployed on Azure, pulling real-time nuclear outage data from the EIA's RESTful API. Features CRUD operations and interactive jQuery/Razor visualizations by facility and generator.</p>
+        </div>
 
-    <div class="project">
-      <h3>Fake News Detection (Machine Learning)</h3>
-      <ul>
-        <li>Built NLP classifier using TF-IDF and NLTK preprocessing.</li>
-        <li>Compared SVM, Logistic Regression, and Naïve Bayes models.</li>
-        <li>SVM achieved highest accuracy in evaluation testing.</li>
-      </ul>
-    </div>
+        <div class="project-card">
+          <div class="project-tag">NLP · Machine Learning</div>
+          <h3>Fake News Classifier</h3>
+          <p>Python-based NLP pipeline using NLTK and Scikit-learn (TF-IDF, tokenization) to classify news articles. Benchmarked SVM, Logistic Regression, and Naïve Bayes — SVM achieved top accuracy for journalism and social media moderation use cases.</p>
+        </div>
 
-    <div class="project">
-      <h3>Healthcare Data Warehouse</h3>
-      <ul>
-        <li>Designed OLAP/OLTP schemas and ER diagrams in Oracle SQL Developer.</li>
-        <li>Implemented Julian date dimension for longitudinal analysis.</li>
-        <li>Built dashboards analyzing revenue, billing, and procedures.</li>
-      </ul>
-    </div>
-  </section>
+        <div class="project-card">
+          <div class="project-tag">Data Warehouse · BI</div>
+          <h3>Healthcare Data Warehouse</h3>
+          <p>Designed OLAP/OLTP schemas and ER diagrams in Oracle SQL Developer with a Julian date dimension for longitudinal analysis. Built dashboards surfacing billing, procedures, and revenue trends for hospital decision-making.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag">QA Automation</div>
+          <h3>Automated Web App QA System</h3>
+          <p>Selenium + BrowserStack test suite with structured regression workflows for cross-browser UI validation. Reduced manual QA effort and improved defect detection rates.</p>
+        </div>
+
+      </div>
+    </section>
 
 
-  <!-- SKILLS -->
-  <section class="section">
-    <h2>Technical Skills</h2>
+    <!-- SKILLS -->
+    <section class="section">
+      <h2 class="section-title">Technical Skills</h2>
 
-    <div class="skills-grid">
-      <div><strong>Programming</strong><br>Python, R, SQL, C#, JavaScript, HTML, CSS</div>
-      <div><strong>ML & Data Science</strong><br>Pandas, NumPy, Scikit-learn, TensorFlow, NLTK</div>
-      <div><strong>ML Algorithms</strong><br>Logistic Regression, Random Forest, SVM, KNN, Naïve Bayes, Neural Networks</div>
-      <div><strong>Frameworks</strong><br>ASP.NET Core MVC, Entity Framework Core</div>
-      <div><strong>Databases</strong><br>SQL Server, PostgreSQL, Oracle</div>
-      <div><strong>Visualization</strong><br>Tableau, Power BI, Matplotlib, Seaborn</div>
-      <div><strong>QA</strong><br>Selenium, BrowserStack</div>
-      <div><strong>Tools</strong><br>Git, Visual Studio, Jupyter, RStudio, Excel (Advanced)</div>
-      <div><strong>Cloud</strong><br>Microsoft Azure, AWS</div>
-    </div>
-  </section>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-label">Programming</div>
+          <div class="skill-tags">
+            <span>Python</span><span>R</span><span>SQL</span><span>C#</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Data Science & ML</div>
+          <div class="skill-tags">
+            <span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>TensorFlow</span><span>NLP / NLTK</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">ML Algorithms</div>
+          <div class="skill-tags">
+            <span>Logistic Regression</span><span>Decision Trees</span><span>Random Forest</span><span>SVM</span><span>KNN</span><span>Naïve Bayes</span><span>Neural Networks</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Data Governance</div>
+          <div class="skill-tags">
+            <span>Informatica IDMC</span><span>CLAIRE AI</span><span>Metadata Management</span><span>Data Quality</span><span>Data Cataloging</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Enterprise Architecture</div>
+          <div class="skill-tags">
+            <span>LeanIX</span><span>SAP Redwood Scheduler</span><span>SAP HANA</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Visualization</div>
+          <div class="skill-tags">
+            <span>Tableau</span><span>Power BI</span><span>Matplotlib</span><span>Seaborn</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Databases</div>
+          <div class="skill-tags">
+            <span>SQL Server</span><span>PostgreSQL</span><span>Oracle</span><span>SAP HANA</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Cloud & Integration</div>
+          <div class="skill-tags">
+            <span>Microsoft Azure</span><span>AWS</span><span>REST APIs</span><span>API Orchestration</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Frameworks & Tools</div>
+          <div class="skill-tags">
+            <span>ASP.NET Core MVC</span><span>Entity Framework Core</span><span>Git</span><span>Jupyter</span><span>RStudio</span><span>Excel (Advanced)</span><span>Selenium</span><span>BrowserStack</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-  <!-- CERTIFICATIONS -->
-  <section class="section">
-    <h2>Certifications</h2>
-    <ul>
-      <li>USF Muma Citizen Data Science</li>
-      <li>Data Analysis for Sustainability</li>
-    </ul>
-  </section>
+    <!-- CERTIFICATIONS -->
+    <section class="section certs-section">
+      <h2 class="section-title">Certifications</h2>
+      <div class="certs-row">
+        <div class="cert-card">
+          <div class="cert-icon">◈</div>
+          <div>USF Muma Citizen Data Science</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">◈</div>
+          <div>Data Analysis for Sustainability</div>
+        </div>
+      </div>
+    </section>
 
-</main>
-
+  </main>
 
   <footer>
-    © 2026 Ryan Stopczynski ·
+    <span>© 2026 Ryan Stopczynski</span>
+    <span class="footer-sep">·</span>
+    <a href="mailto:rmstopczynski@gmail.com">rmstopczynski@gmail.com</a>
+    <span class="footer-sep">·</span>
     <a href="#top" class="scroll-top">Back to top ↑</a>
   </footer>
 

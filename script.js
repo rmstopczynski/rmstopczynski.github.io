@@ -1,21 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  /* ── TAB SWITCHING ── */
   const tabs = document.querySelectorAll(".tab");
   const contents = document.querySelectorAll(".panel-content");
-  const toggle = document.getElementById("themeToggle");
 
-  /* TAB SWITCHING */
   tabs.forEach(tab => {
     tab.addEventListener("click", () => {
       tabs.forEach(t => t.classList.remove("active"));
       contents.forEach(c => c.classList.remove("active"));
-
       tab.classList.add("active");
       document.getElementById(tab.dataset.tab).classList.add("active");
     });
   });
 
-  /* LOAD SAVED THEME */
+  /* ── DARK MODE ── */
+  const toggle = document.getElementById("themeToggle");
   const savedTheme = localStorage.getItem("theme");
 
   if (savedTheme === "dark") {
@@ -23,17 +22,38 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.textContent = "☀";
   }
 
-  /* TOGGLE DARK MODE */
   toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-
-    if (document.body.classList.contains("dark")) {
-      localStorage.setItem("theme", "dark");
-      toggle.textContent = "☀";
-    } else {
-      localStorage.setItem("theme", "light");
-      toggle.textContent = "☾";
-    }
+    const isDark = document.body.classList.toggle("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    toggle.textContent = isDark ? "☀" : "☾";
   });
+
+  /* ── SCROLL REVEAL ── */
+  if ("IntersectionObserver" in window) {
+    const style = document.createElement("style");
+    style.textContent = `
+      .panel, .section {
+        opacity: 0;
+        transform: translateY(16px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+      }
+      .panel.visible, .section.visible {
+        opacity: 1;
+        transform: none;
+      }
+    `;
+    document.head.appendChild(style);
+
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add("visible");
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll(".panel, .section").forEach(el => obs.observe(el));
+  }
 
 });
