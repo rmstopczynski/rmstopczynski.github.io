@@ -3,127 +3,390 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ryan Stopczynski</title>
-  <link rel="stylesheet" href="style.css?v=6">
+  <title>Ryan Stopczynski — Data Governance & Analytics Engineer</title>
+  <meta name="description" content="Data governance and analytics engineer building AI-integrated data pipelines. M.S. AI & Business Analytics, USF. Portfolio of full-stack, data engineering, and applied ML projects.">
+  <meta name="theme-color" content="#0a0e13">
+  <link rel="canonical" href="https://rmstopczynski.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ryan Stopczynski — Data Governance & Analytics Engineer">
+  <meta property="og:description" content="M.S. in AI & Business Analytics building governed, AI-integrated data pipelines. Full-stack, data engineering, and applied ML projects.">
+  <meta property="og:url" content="https://rmstopczynski.github.io/">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230a0e13'/%3E%3Ccircle cx='6' cy='12' r='2.1' fill='%2362e0d8'/%3E%3Ccircle cx='12' cy='12' r='2.1' fill='%23ffb454'/%3E%3Ccircle cx='18' cy='12' r='2.1' fill='%2362e0d8'/%3E%3C/svg%3E">
 </head>
 
 <body>
+
+  <!-- STICKY NAV -->
+  <nav class="topnav" id="topnav" aria-label="Page sections">
+    <div class="topnav-inner">
+      <span class="topnav-name"><span class="status-dot" aria-hidden="true"></span>R.STOPCZYNSKI</span>
+      <div class="topnav-links">
+        <a href="#about">About</a>
+        <a href="#approach-section">Approach</a>
+        <a href="#experience-section">Experience</a>
+        <a href="#projects-section">Projects</a>
+        <a href="#skills-section">Skills</a>
+        <a href="#contact-section">Contact</a>
+      </div>
+      <span class="nav-clock" id="navClock" aria-hidden="true"></span>
+    </div>
+  </nav>
+
   <!-- HERO -->
   <header class="hero" id="top">
-    <div class="hero-content">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">TAMPA, FL &nbsp;·&nbsp; OPEN TO OPPORTUNITIES</div>
       <h1>Ryan Stopczynski</h1>
-      <h2>Data Analyst</h2>
-      <p>AI & Business Analytics • Data Visualization • Applied Machine Learning</p>
-
+      <p class="hero-sub">// data governance &amp; analytics engineer</p>
+      <p class="hero-bio" id="about">
+        M.S. in AI &amp; Business Analytics building the infrastructure that makes enterprise data trustworthy — <strong>governed metadata catalogs, AI-integrated pipelines, and the lakehouse/warehouse architecture underneath them.</strong> Currently at Jabil connecting Informatica IDMC and an internal AI chatbot via REST APIs; outside of work, I build full end-to-end systems (ETL, RAG, full-stack apps) to prove I can own every layer, not just evaluate someone else's tooling.
+      </p>
       <div class="hero-buttons">
-        <a href="Ryan_Stopczynski_Resume.pdf" class="btn primary" target="_blank">Resume</a>
-        <a href="https://github.com/rmstopczynski" class="btn outline" target="_blank">GitHub</a>
+        <a href="Ryan_Stopczynski_Resume.pdf" class="btn primary" target="_blank">↓ Download Resume</a>
+        <a href="https://github.com/rmstopczynski" class="btn outline" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/ryanstopczynski" class="btn outline" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:rmstopczynski@gmail.com" class="btn outline">Email</a>
+      </div>
+
+      <!-- SIGNATURE ELEMENT: pipeline strip -->
+      <div class="pipeline" role="img" aria-label="Data pipeline diagram: Ingest, Transform, Validate, Govern, Serve">
+        <div class="pipeline-label">// what i build — data pipeline, end to end</div>
+        <div class="pipeline-track">
+          <div class="pipeline-node active"><div class="dot"></div><span>Ingest</span></div>
+          <div class="pipeline-connector"><span class="packet"></span></div>
+          <div class="pipeline-node active"><div class="dot"></div><span>Transform</span></div>
+          <div class="pipeline-connector"><span class="packet"></span></div>
+          <div class="pipeline-node active"><div class="dot"></div><span>Validate</span></div>
+          <div class="pipeline-connector"><span class="packet"></span></div>
+          <div class="pipeline-node active"><div class="dot"></div><span>Govern</span></div>
+          <div class="pipeline-connector"><span class="packet"></span></div>
+          <div class="pipeline-node active"><div class="dot"></div><span>Serve</span></div>
+        </div>
+      </div>
+
+      <div class="stat-strip reveal">
+        <div class="stat-cell">
+          <div class="stat-num">3</div>
+          <div class="stat-label">End-to-end platforms<br>shipped solo</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">60/60</div>
+          <div class="stat-label">dbt tests passing<br>in production</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">5</div>
+          <div class="stat-label">enterprise integrations<br>built at Jabil</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">800+</div>
+          <div class="stat-label">students supported<br>as TA</div>
+        </div>
       </div>
     </div>
-
-    <button id="themeToggle" class="theme-toggle">☾</button>
   </header>
 
   <main>
 
-    <!-- EXPERIENCE / EDUCATION PANEL -->
-    <section class="panel">
+    <!-- APPROACH -->
+    <section class="section" id="approach-section">
+      <div class="section-head">
+        <span class="section-num mono">00</span>
+        <h2 class="section-title">How I Work</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="approach-grid reveal">
+        <div class="approach-card">
+          <span class="approach-num">01</span>
+          <h3>Audit before I build</h3>
+          <p>Before rebuilding the nuclear outage tracker, I read the inherited codebase line by line instead of assuming a working demo meant working infrastructure — and found the "database" was a `List&lt;T&gt;` that reset on every restart.</p>
+        </div>
+        <div class="approach-card">
+          <span class="approach-num">02</span>
+          <h3>Document the honest tradeoff</h3>
+          <p>When logistic regression beat XGBoost on the manufacturing model's F1 score, I wrote that down instead of cherry-picking the result that sounded better on a resume.</p>
+        </div>
+        <div class="approach-card">
+          <span class="approach-num">03</span>
+          <h3>Own the whole stack</h3>
+          <p>At Jabil I evaluate governance tooling built by others. On my own time I build the same category of system end to end — ingestion, transformation, validation, and the API serving it — so I understand what that tooling actually has to get right.</p>
+        </div>
+        <div class="approach-card">
+          <span class="approach-num">04</span>
+          <h3>Ship with tests, not vibes</h3>
+          <p>60 dbt tests on the healthcare pipeline, a 12-case evaluation harness on the RAG assistant — every project ships with a way to prove it actually works, not just a demo that happened to run once.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / EDUCATION -->
+    <section class="panel reveal" id="experience-section">
       <div class="panel-tabs">
         <button class="tab active" data-tab="experience">Experience</button>
         <button class="tab" data-tab="education">Education</button>
       </div>
 
       <div class="panel-body">
+
+        <!-- EXPERIENCE -->
         <div id="experience" class="panel-content active">
-          <div class="entry">
-            <h3>Data Analyst Intern</h3>
-            <span>Expert Inspectors Inc. • May 2025 – Dec 2025</span>
-            <ul>
-              <li>Analyzed inspection data using SQL and Excel to identify underwriting trends.</li>
-              <li>Built Tableau dashboards tracking turnaround time and inspection volume.</li>
-              <li>Provided operational insights used by management.</li>
-            </ul>
-          </div>
+          <div class="timeline">
 
-          <div class="entry">
-            <h3>Graduate Teaching Assistant</h3>
-            <span>University of South Florida • Aug 2024 – May 2025</span>
-            <ul>
-              <li>Supported a statistics course with 400+ students.</li>
-              <li>Graded assignments and provided structured feedback.</li>
-              <li>Coordinated professionally with graduate TAs.</li>
-            </ul>
+            <div class="tl-item current">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <div class="tl-meta">
+                  <span class="tl-badge">Current</span>
+                  <span class="tl-date">May 2026 – Present</span>
+                </div>
+                <h3>Data Governance Engineer Intern</h3>
+                <div class="tl-company">Jabil · St. Petersburg, FL</div>
+                <ul>
+                  <li>Built and containerized a Python integration service connecting SAP LeanIX and Informatica IDMC through REST APIs, automating metadata enrichment, URL mapping, relationship generation, and enterprise data-flow validation.</li>
+                  <li>Developed API integrations between Informatica's metadata catalog and an internal AI chatbot — REST authentication, pagination, and orchestration — supporting Apache Airflow workflows that power natural-language metadata search.</li>
+                  <li>Evaluated ingestion of unstructured enterprise data from Amazon S3 into Informatica IDMC, testing metadata extraction and recommending an approach for enterprise-scale governance of unstructured assets.</li>
+                  <li>Benchmarked Informatica CLAIRE AI's automated metadata classification and data-quality capabilities, presenting findings that influenced tooling decisions.</li>
+                  <li>Partnered with Enterprise Architecture and Data Lake teams to document governance standards, reducing catalog management effort.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <div class="tl-meta">
+                  <span class="tl-date">Aug 2024 – May 2025</span>
+                </div>
+                <h3>Graduate Teaching Assistant</h3>
+                <div class="tl-company">University of South Florida · Tampa, FL</div>
+                <ul>
+                  <li>Supported 800+ undergraduates across two semesters of Business &amp; Economic Statistics through office hours, clarifying hypothesis testing, regression, and probability distributions.</li>
+                  <li>Graded statistical projects with detailed methodology feedback to strengthen students' analytical reasoning.</li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
 
+        <!-- EDUCATION -->
         <div id="education" class="panel-content">
-          <div class="entry">
-            <h3>M.S. Artificial Intelligence & Business Analytics</h3>
-            <span>University of South Florida • Expected May 2026</span>
-          </div>
-          <div class="entry">
-            <h3>B.S. Business Analytics & Information Systems</h3>
-            <span>University of South Florida • GPA 4.0</span>
+          <div class="timeline">
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <div class="tl-meta">
+                  <span class="tl-date">Aug 2024 – May 2026</span>
+                </div>
+                <h3>M.S. Artificial Intelligence &amp; Business Analytics</h3>
+                <div class="tl-company">University of South Florida</div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <div class="tl-meta">
+                  <span class="tl-date">Aug 2020 – May 2024</span>
+                </div>
+                <h3>B.S. Business Analytics &amp; Information Systems</h3>
+                <div class="tl-company">University of South Florida</div>
+              </div>
+            </div>
+
           </div>
         </div>
+
       </div>
     </section>
+
 
     <!-- PROJECTS -->
-    <section class="section" id="projects">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>Automated Web Application Quality Assurance System</h3>
-        <p>Automated cross-browser UI testing using Selenium and BrowserStack.</p>
-        <div class="tags">
-          <span>Selenium</span><span>BrowserStack</span><span>Automation</span>
-        </div>
+    <section class="section" id="projects-section">
+      <div class="section-head">
+        <span class="section-num mono">01</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-rule"></div>
       </div>
+      <div class="projects-grid">
 
-      <div class="project">
-        <h3>U.S. Nuclear Outage Tracking Web Application</h3>
-        <p>ASP.NET Core MVC application consuming real-time EIA API data.</p>
-        <div class="tags">
-          <span>C#</span><span>ASP.NET Core</span><span>Azure</span>
+        <!-- Healthcare Data Engineering -->
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-tag">Data Engineering · Lakehouse</div>
+            <a href="https://github.com/rmstopczynski/healthcare-data-engineering-platform" class="project-gh" target="_blank" rel="noopener" aria-label="View on GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </a>
+          </div>
+          <h3>Healthcare Data Engineering Pipeline</h3>
+          <p>Medallion (Bronze → Silver → Gold) lakehouse on Databricks. A normalized OLTP schema flows through PySpark cleaning and 19 dbt models into dimensional fact/dim marts, orchestrated end-to-end by a 5-task Airflow DAG calling the Databricks Jobs API — plus a Kafka → Auto Loader stream for near-real-time ADT (admit/discharge/transfer) events.</p>
+          <div class="project-highlight">Runs <b>60/60 dbt tests passing</b> against live Databricks data — every PK, FK, and accepted-value check green.</div>
+          <div class="project-chips"><span>Databricks</span><span>Delta Lake</span><span>dbt</span><span>Airflow</span><span>Kafka</span><span>Docker</span></div>
+          <div class="project-links">
+            <a href="https://github.com/rmstopczynski/healthcare-data-engineering-platform" target="_blank" rel="noopener">→ Source</a>
+            <a href="https://github.com/rmstopczynski/healthcare-data-engineering-platform#readme" target="_blank" rel="noopener">→ Build log &amp; debugging notes</a>
+          </div>
         </div>
-      </div>
 
-      <div class="project">
-        <h3>Fake News Detection Using Machine Learning</h3>
-        <p>NLP classifier using TF-IDF and SVM, Logistic Regression, and Naïve Bayes.</p>
-        <div class="tags">
-          <span>Python</span><span>NLP</span><span>Scikit-learn</span>
+        <!-- Nuclear Outage Tracker -->
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-tag">Full Stack · REST API · MCP</div>
+            <a href="https://github.com/rmstopczynski/nuclear-outage-platform" class="project-gh" target="_blank" rel="noopener" aria-label="View on GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </a>
+          </div>
+          <h3>U.S. Nuclear Outage Tracking Platform</h3>
+          <p>ASP.NET Core + Postgres app tracking live EIA nuclear-outage data. Rebuilt solo from a university group project after auditing the original and finding it had no real database, three hardcoded credentials, and a data-matching bug — replaced with real EF Core persistence, JWT auth + watchlists, a full REST API, an AI-generated outage summary (Groq), and an MCP server exposing outage data as tools an AI client can call directly.</p>
+          <div class="project-highlight">Audited a "working" inherited codebase and found it had <b>zero real persistence</b> — a `List&lt;T&gt;` masquerading as a database — before rebuilding it properly.</div>
+          <div class="project-chips"><span>C# · ASP.NET Core</span><span>PostgreSQL</span><span>EF Core</span><span>JWT Auth</span><span>REST API</span><span>MCP Server</span></div>
+          <div class="project-links">
+            <a href="https://github.com/rmstopczynski/nuclear-outage-platform" target="_blank" rel="noopener">→ Source</a>
+            <a href="https://github.com/rmstopczynski/nuclear-outage-platform#readme" target="_blank" rel="noopener">→ Build log &amp; debugging notes</a>
+          </div>
         </div>
-      </div>
 
-      <div class="project">
-        <h3>Healthcare Data Warehouse</h3>
-        <p>Designed OLAP schemas and ETL pipelines for healthcare analytics.</p>
-        <div class="tags">
-          <span>SQL</span><span>Data Modeling</span><span>ETL</span>
+        <!-- Manufacturing AI Platform -->
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-tag">Applied ML · RAG · LLM</div>
+            <a href="https://github.com/rmstopczynski/manufacturing-ai-platform" class="project-gh" target="_blank" rel="noopener" aria-label="View on GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </a>
+          </div>
+          <h3>Manufacturing AI Intelligence Platform</h3>
+          <p>An AI assistant combining an XGBoost predictive-maintenance model over sensor time-series with a LangChain RAG pipeline over technical documentation, so a plant manager can ask a plain-language question and get an answer grounded in both live machine health and maintenance docs. Served via FastAPI + Streamlit, containerized, with a custom evaluation harness.</p>
+          <div class="project-highlight">Compared XGBoost against a logistic-regression baseline on real precision/recall — and <b>documented honestly</b> when the simpler model won, rather than cherry-picking the result.</div>
+          <div class="project-chips"><span>XGBoost</span><span>LangChain</span><span>ChromaDB</span><span>FastAPI</span><span>Streamlit</span><span>Docker</span></div>
+          <div class="project-links">
+            <a href="https://github.com/rmstopczynski/manufacturing-ai-platform" target="_blank" rel="noopener">→ Source</a>
+            <a href="https://github.com/rmstopczynski/manufacturing-ai-platform#readme" target="_blank" rel="noopener">→ Build log &amp; debugging notes</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="section" id="skills-section">
+      <div class="section-head">
+        <span class="section-num mono">02</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <div class="skill-label">Languages</div>
+          <div class="skill-tags">
+            <span>Python</span><span>SQL</span><span>C#</span><span>R</span><span>JavaScript</span><span>HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Data Engineering</div>
+          <div class="skill-tags">
+            <span>Spark</span><span>Databricks</span><span>Delta Lake</span><span>dbt</span><span>Airflow</span><span>Kafka</span><span>Docker</span><span>ETL / ELT</span><span>Data Modeling</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">AI &amp; ML</div>
+          <div class="skill-tags">
+            <span>Scikit-learn</span><span>XGBoost</span><span>LangChain</span><span>RAG</span><span>ChromaDB</span><span>LLM APIs</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Data Governance</div>
+          <div class="skill-tags">
+            <span>Informatica IDMC</span><span>CLAIRE AI</span><span>SAP LeanIX</span><span>Metadata Management</span><span>Data Cataloging</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Data Platforms</div>
+          <div class="skill-tags">
+            <span>PostgreSQL</span><span>SQL Server</span><span>Snowflake</span><span>AWS S3</span><span>REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Analytics &amp; Tools</div>
+          <div class="skill-tags">
+            <span>Pandas</span><span>NumPy</span><span>Git / GitHub</span><span>Postman</span><span>Power BI</span><span>Tableau</span><span>Excel</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div><strong>Languages</strong><br>Python, SQL, C#, R, JavaScript</div>
-        <div><strong>Data & ML</strong><br>Pandas, NumPy, Scikit-learn, TensorFlow, NLTK</div>
-        <div><strong>Visualization</strong><br>Tableau, Power BI, Matplotlib</div>
-        <div><strong>Tools & Cloud</strong><br>Git, Azure, AWS, Selenium</div>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section">
+      <div class="section-head">
+        <span class="section-num mono">03</span>
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="certs-row reveal">
+        <div class="cert-card">
+          <span class="cert-icon">◈</span>
+          <div>USF Muma Citizen Data Science</div>
+        </div>
+        <div class="cert-card">
+          <span class="cert-icon">◈</span>
+          <div>Data Analysis for Sustainability</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact-section">
+      <div class="section-head">
+        <span class="section-num mono">04</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="section-rule"></div>
+      </div>
+      <p class="contact-sub">Open to full-time roles in data engineering, data governance, and applied ML — May 2026 onward.</p>
+      <div class="contact-grid reveal">
+        <a href="mailto:rmstopczynski@gmail.com" class="contact-card">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          </div>
+          <span>rmstopczynski@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ryanstopczynski" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <span>linkedin.com/in/ryanstopczynski</span>
+        </a>
+        <a href="https://github.com/rmstopczynski" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          </div>
+          <span>github.com/rmstopczynski</span>
+        </a>
+        <a href="Ryan_Stopczynski_Resume.pdf" target="_blank" class="contact-card">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <span>Download Resume (PDF)</span>
+        </a>
       </div>
     </section>
 
   </main>
 
   <footer>
-    © 2026 Ryan Stopczynski ·
+    <span>© 2026 Ryan Stopczynski</span>
+    <span class="footer-sep">·</span>
+    <span>Built with HTML/CSS/JS, no framework</span>
+    <span class="footer-sep">·</span>
     <a href="#top" class="scroll-top">Back to top ↑</a>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>
