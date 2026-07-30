@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ryan Stopczynski — Data Governance & Analytics Engineer</title>
+  <title>Ryan Stopczynski · Data Governance & Analytics Engineer</title>
   <meta name="description" content="Data governance and analytics engineer building AI-integrated data pipelines. M.S. AI & Business Analytics, USF. Portfolio of full-stack, data engineering, and applied ML projects.">
   <meta name="theme-color" content="#0a0e13">
   <link rel="canonical" href="https://rmstopczynski.github.io/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Ryan Stopczynski — Data Governance & Analytics Engineer">
+  <meta property="og:title" content="Ryan Stopczynski · Data Governance & Analytics Engineer">
   <meta property="og:description" content="M.S. in AI & Business Analytics building governed, AI-integrated data pipelines. Full-stack, data engineering, and applied ML projects.">
   <meta property="og:url" content="https://rmstopczynski.github.io/">
   <meta name="twitter:card" content="summary">
@@ -44,7 +44,7 @@
       <h1>Ryan Stopczynski</h1>
       <p class="hero-sub">// data governance &amp; analytics engineer</p>
       <p class="hero-bio" id="about">
-        M.S. in AI &amp; Business Analytics building the infrastructure that makes enterprise data trustworthy — <strong>governed metadata catalogs, AI-integrated pipelines, and the lakehouse/warehouse architecture underneath them.</strong> Currently at Jabil connecting Informatica IDMC and an internal AI chatbot via REST APIs; outside of work, I build full end-to-end systems (ETL, RAG, full-stack apps) to prove I can own every layer, not just evaluate someone else's tooling.
+        M.S. in AI &amp; Business Analytics building the infrastructure that makes enterprise data trustworthy: <strong>governed metadata catalogs, AI-integrated pipelines, and the lakehouse/warehouse architecture underneath them.</strong> Currently at Jabil connecting Informatica IDMC and an internal AI chatbot via REST APIs; outside of work, I build full end-to-end systems (ETL, RAG, full-stack apps) to prove I can own every layer, not just evaluate someone else's tooling.
       </p>
       <div class="hero-buttons">
         <a href="Ryan_Stopczynski_Resume.pdf" class="btn primary" target="_blank">↓ Download Resume</a>
@@ -55,7 +55,7 @@
 
       <!-- SIGNATURE ELEMENT: pipeline strip -->
       <div class="pipeline" role="img" aria-label="Data pipeline diagram: Ingest, Transform, Validate, Govern, Serve">
-        <div class="pipeline-label">// what i build — data pipeline, end to end</div>
+        <div class="pipeline-label">// what i build · data pipeline, end to end</div>
         <div class="pipeline-track">
           <div class="pipeline-node active"><div class="dot"></div><span>Ingest</span></div>
           <div class="pipeline-connector"><span class="packet"></span></div>
@@ -103,7 +103,7 @@
         <div class="approach-card">
           <span class="approach-num">01</span>
           <h3>Audit before I build</h3>
-          <p>Before rebuilding the nuclear outage tracker, I read the inherited codebase line by line instead of assuming a working demo meant working infrastructure — and found the "database" was a `List&lt;T&gt;` that reset on every restart.</p>
+          <p>Before rebuilding the nuclear outage tracker, I read the inherited codebase line by line instead of assuming a working demo meant working infrastructure, and found the "database" was a <code>List&lt;T&gt;</code> that reset on every restart.</p>
         </div>
         <div class="approach-card">
           <span class="approach-num">02</span>
@@ -113,12 +113,12 @@
         <div class="approach-card">
           <span class="approach-num">03</span>
           <h3>Own the whole stack</h3>
-          <p>At Jabil I evaluate governance tooling built by others. On my own time I build the same category of system end to end — ingestion, transformation, validation, and the API serving it — so I understand what that tooling actually has to get right.</p>
+          <p>At Jabil I evaluate governance tooling built by others. On my own time I build the same category of system end to end: ingestion, transformation, validation, and the API serving it, so I understand what that tooling actually has to get right.</p>
         </div>
         <div class="approach-card">
           <span class="approach-num">04</span>
           <h3>Ship with tests, not vibes</h3>
-          <p>60 dbt tests on the healthcare pipeline, a 12-case evaluation harness on the RAG assistant — every project ships with a way to prove it actually works, not just a demo that happened to run once.</p>
+          <p>60 dbt tests on the healthcare pipeline, a 12-case evaluation harness on the RAG assistant: every project ships with a way to prove it actually works, not just a demo that happened to run once.</p>
         </div>
       </div>
     </section>
@@ -147,7 +147,7 @@
                 <div class="tl-company">Jabil · St. Petersburg, FL</div>
                 <ul>
                   <li>Built and containerized a Python integration service connecting SAP LeanIX and Informatica IDMC through REST APIs, automating metadata enrichment, URL mapping, relationship generation, and enterprise data-flow validation.</li>
-                  <li>Developed API integrations between Informatica's metadata catalog and an internal AI chatbot — REST authentication, pagination, and orchestration — supporting Apache Airflow workflows that power natural-language metadata search.</li>
+                  <li>Developed API integrations between Informatica's metadata catalog and an internal AI chatbot, using REST authentication, pagination, and orchestration, supporting Apache Airflow workflows that power natural-language metadata search.</li>
                   <li>Evaluated ingestion of unstructured enterprise data from Amazon S3 into Informatica IDMC, testing metadata extraction and recommending an approach for enterprise-scale governance of unstructured assets.</li>
                   <li>Benchmarked Informatica CLAIRE AI's automated metadata classification and data-quality capabilities, presenting findings that influenced tooling decisions.</li>
                   <li>Partnered with Enterprise Architecture and Data Lake teams to document governance standards, reducing catalog management effort.</li>
@@ -224,8 +224,8 @@
             </a>
           </div>
           <h3>Healthcare Data Engineering Pipeline</h3>
-          <p>Medallion (Bronze → Silver → Gold) lakehouse on Databricks. A normalized OLTP schema flows through PySpark cleaning and 19 dbt models into dimensional fact/dim marts, orchestrated end-to-end by a 5-task Airflow DAG calling the Databricks Jobs API — plus a Kafka → Auto Loader stream for near-real-time ADT (admit/discharge/transfer) events.</p>
-          <div class="project-highlight">Runs <b>60/60 dbt tests passing</b> against live Databricks data — every PK, FK, and accepted-value check green.</div>
+          <p>Medallion (Bronze → Silver → Gold) lakehouse on Databricks. A normalized OLTP schema flows through PySpark cleaning and 19 dbt models into dimensional fact/dim marts, orchestrated end-to-end by a 5-task Airflow DAG calling the Databricks Jobs API, plus a Kafka → Auto Loader stream for near-real-time ADT (admit/discharge/transfer) events.</p>
+          <div class="project-highlight">Runs <b>60/60 dbt tests passing</b> against live Databricks data: every PK, FK, and accepted-value check green.</div>
           <div class="project-chips"><span>Databricks</span><span>Delta Lake</span><span>dbt</span><span>Airflow</span><span>Kafka</span><span>Docker</span></div>
           <div class="project-links">
             <a href="https://github.com/rmstopczynski/healthcare-data-engineering-platform" target="_blank" rel="noopener">→ Source</a>
@@ -242,8 +242,8 @@
             </a>
           </div>
           <h3>U.S. Nuclear Outage Tracking Platform</h3>
-          <p>ASP.NET Core + Postgres app tracking live EIA nuclear-outage data. Rebuilt solo from a university group project after auditing the original and finding it had no real database, three hardcoded credentials, and a data-matching bug — replaced with real EF Core persistence, JWT auth + watchlists, a full REST API, an AI-generated outage summary (Groq), and an MCP server exposing outage data as tools an AI client can call directly.</p>
-          <div class="project-highlight">Audited a "working" inherited codebase and found it had <b>zero real persistence</b> — a `List&lt;T&gt;` masquerading as a database — before rebuilding it properly.</div>
+          <p>ASP.NET Core + Postgres app tracking live EIA nuclear-outage data. Rebuilt solo from a university group project after auditing the original and finding it had no real database, three hardcoded credentials, and a data-matching bug. Replaced with real EF Core persistence, JWT auth + watchlists, a full REST API, an AI-generated outage summary (Groq), and an MCP server exposing outage data as tools an AI client can call directly.</p>
+          <div class="project-highlight">Audited a "working" inherited codebase and found it had <b>zero real persistence</b>: a <code>List&lt;T&gt;</code> masquerading as a database, before rebuilding it properly.</div>
           <div class="project-chips"><span>C# · ASP.NET Core</span><span>PostgreSQL</span><span>EF Core</span><span>JWT Auth</span><span>REST API</span><span>MCP Server</span></div>
           <div class="project-links">
             <a href="https://github.com/rmstopczynski/nuclear-outage-platform" target="_blank" rel="noopener">→ Source</a>
@@ -261,7 +261,7 @@
           </div>
           <h3>Manufacturing AI Intelligence Platform</h3>
           <p>An AI assistant combining an XGBoost predictive-maintenance model over sensor time-series with a LangChain RAG pipeline over technical documentation, so a plant manager can ask a plain-language question and get an answer grounded in both live machine health and maintenance docs. Served via FastAPI + Streamlit, containerized, with a custom evaluation harness.</p>
-          <div class="project-highlight">Compared XGBoost against a logistic-regression baseline on real precision/recall — and <b>documented honestly</b> when the simpler model won, rather than cherry-picking the result.</div>
+          <div class="project-highlight">Compared XGBoost against a logistic-regression baseline on real precision/recall, and <b>documented honestly</b> when the simpler model won, rather than cherry-picking the result.</div>
           <div class="project-chips"><span>XGBoost</span><span>LangChain</span><span>ChromaDB</span><span>FastAPI</span><span>Streamlit</span><span>Docker</span></div>
           <div class="project-links">
             <a href="https://github.com/rmstopczynski/manufacturing-ai-platform" target="_blank" rel="noopener">→ Source</a>
@@ -348,7 +348,7 @@
         <h2 class="section-title">Get in Touch</h2>
         <div class="section-rule"></div>
       </div>
-      <p class="contact-sub">Open to full-time roles in data engineering, data governance, and applied ML — May 2026 onward.</p>
+      <p class="contact-sub">Open to full-time roles in data engineering, data governance, and applied ML, starting May 2026.</p>
       <div class="contact-grid reveal">
         <a href="mailto:rmstopczynski@gmail.com" class="contact-card">
           <div class="contact-icon">

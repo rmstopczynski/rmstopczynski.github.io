@@ -1,5 +1,5 @@
 /* ============================================================
-   RYAN STOPCZYNSKI — PORTFOLIO
+   RYAN STOPCZYNSKI · PORTFOLIO
    Design concept: systems telemetry / data-pipeline control room.
    Grounded in the actual subject: ETL pipelines, Airflow DAGs,
    Kafka streams, and data-governance dashboards.
@@ -49,6 +49,7 @@ body {
 }
 
 a { color: var(--cyan); text-decoration: none; }
+a:visited { color: inherit; }
 a:hover { text-decoration: underline; }
 
 ul { margin: 0.55rem 0 0; padding-left: 1.15rem; }
@@ -58,6 +59,16 @@ li::marker { color: var(--text-dim); }
 ::selection { background: var(--cyan); color: #06110f; }
 
 .mono { font-family: var(--font-mono); }
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: rgba(98, 224, 216, 0.09);
+  border: 1px solid rgba(98, 224, 216, 0.18);
+  border-radius: 4px;
+  padding: 0.08em 0.4em;
+  color: var(--cyan);
+}
 
 /* focus visibility */
 a:focus-visible, button:focus-visible {
@@ -179,6 +190,7 @@ a:focus-visible, button:focus-visible {
   max-width: 780px;
   margin: 0 auto;
   position: relative;
+  text-align: center;
 }
 
 .hero-eyebrow {
@@ -189,9 +201,11 @@ a:focus-visible, button:focus-visible {
   margin-bottom: 1.1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.55rem;
 }
-.hero-eyebrow::before {
+.hero-eyebrow::before,
+.hero-eyebrow::after {
   content: '';
   width: 16px; height: 1px;
   background: var(--cyan);
@@ -218,7 +232,7 @@ a:focus-visible, button:focus-visible {
 
 .hero-bio {
   max-width: 600px;
-  margin: 0 0 2.1rem;
+  margin: 0 auto 2.1rem;
   font-size: 1rem;
   line-height: 1.75;
   color: var(--text-mid);
@@ -227,6 +241,7 @@ a:focus-visible, button:focus-visible {
 
 .hero-buttons {
   display: flex;
+  justify-content: center;
   gap: 0.7rem;
   flex-wrap: wrap;
   margin-bottom: 3rem;
@@ -778,7 +793,7 @@ main {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1rem;
 }
 
@@ -797,7 +812,20 @@ main {
   font-weight: 500;
 }
 
-.contact-card:hover {
+.contact-card:visited,
+.contact-card:visited .contact-value,
+.contact-card:visited span {
+  color: var(--text);
+}
+
+.contact-card span {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.4;
+}
+
+.contact-card:hover,
+.contact-card:hover:visited {
   border-color: var(--cyan-dim);
   transform: translateY(-2px);
   text-decoration: none;

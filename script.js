@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* ── NAV CLOCK (Tampa / Eastern local time — a small "systems" touch) ── */
+  /* ── NAV CLOCK (Tampa / Eastern local time, a small "systems" touch) ── */
   const clockEl = document.getElementById("navClock");
   if (clockEl) {
     const tick = () => {
